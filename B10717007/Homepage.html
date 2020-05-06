@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Homepage</title>
+    <script>
+        //網頁文件載入完成執行
+    $(document).ready(function () {
+        //按下 [對答] 鈕執行
+        $("#btnCheck1").click(function () {
+            var ans = $("#txtAns1").val();//取得txtAns文自欄的值
+            var msg = "錯誤！！提示：沒有提示";
+            if (ans == "狗") {
+                msg = "正解:布丁狗(不叮狗)";
+            }
+            $("#span1").text(msg);
+        })
+    }
+    </script>
+</head >
+    <body>
+        <p><input type="button" value="個人履歷" onclick="location.href='Profile.html'"/></p>
+        <p><input type="button" value="猜燈謎" onclick="location.href='Puzzle.html'"/></p>
+    </body >
+</html >
